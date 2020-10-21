@@ -1,1 +1,8 @@
 Home Page
+
+{% for job in jobs.all %}
+
+<img src="{{ job.image.url }}" style="width: 300px; height: 300px;" />
+{{ job.summary }}
+
+{% endfor %}
