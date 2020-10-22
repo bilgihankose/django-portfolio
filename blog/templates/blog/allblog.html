@@ -1,4 +1,5 @@
 Hello there
 {% for blog in blogs.all %}
-    {{ blog.title }}
+
+    <a href="{{ blog.id }}"> {{ blog.title }}</a>
 {% endfor %}
